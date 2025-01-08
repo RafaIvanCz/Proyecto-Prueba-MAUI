@@ -6,43 +6,49 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25"
+            Spacing="15"
             HorizontalOptions="Center">
             <Image
                 Source="esmalte.png"
-                HeightRequest="185"
+                HeightRequest="130"
+                Margin="0, 15, 0, 40"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a hovercraft number nine" />
 
+            <!--<Label
+                Text="B-Nails"
+                Style="{StaticResource Headline}"
+                FontAttributes="Bold"
+                FontSize="50"
+                TextColor="{StaticResource Bnails}"
+                FontFamily="Comic Sans MS"
+                SemanticProperties.HeadingLevel="Level1" />-->                
             <Label
                 Text="Iniciar sesión"
+                TextColor="DarkBlue"
                 Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level1" />                
-                
+                SemanticProperties.HeadingLevel="Level1" />
+
             <Border WidthRequest="400" Stroke="{StaticResource Tertiary}">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="5"/>
-                </Border.StrokeShape>
                 <Entry
-                    Placeholder="Ingrese su nombre"
-                    PlaceholderColor="Gray" />
+                    Placeholder="Ingresa tu nombre"
+                    PlaceholderColor="{StaticResource Gray400}" />
             </Border>
 
             <Border WidthRequest="400" Stroke="{StaticResource Tertiary}">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="5"/>
-                </Border.StrokeShape>
                 <Entry
-                    Placeholder="Ingrese su contraseña"
+                    Placeholder="Ingresa tu contraseña"
                     IsPassword="True"
-                    PlaceholderColor="Gray"
+                    PlaceholderColor="{StaticResource Gray400}"
                     />
             </Border>
 
-            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="End" Margin="0, -20, 0 , 20">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="End" Margin="0, -15, 0 , 20">
                 <Label
                     Text="Mostrar contraseña"
-                    Margin="0, 0, 15, 0"
+                    TextColor="DarkBlue"
+                    CharacterSpacing="1"
+                    Margin="0, 0, 10, 0"
                     Style="{StaticResource SubHeadline}"
                     FontSize="13"
                     FontAttributes="Bold"
@@ -61,8 +67,7 @@
             <Button
                 x:Name="CounterBtn"
                 Text="Ingresar"
-                CharacterSpacing="1"
-                FontSize="16"
+                CharacterSpacing="3"
                 FontAttributes="Bold"
                 BackgroundColor="HotPink"
                 TextColor="DarkBlue"
